@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: "lato", sans-serif; /*font-family: Arial,Helvetica,sans-serif*/
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color : #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a:hover:not(a.active){
+    background-color: #555;
+    color: white;
+
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100px;
+}
+
+@media screen{
+    .sidebar{
+        text-align: center;
+        float: none;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: bisque;
+    color: black;
+}
+
+h1{ 
+    text-align: center;
+    text-shadow: 0mm;
+    text-decoration: dashed;
+}
+
+h3{
+    text-align:left;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    text-decoration: wavy;
+    text-size-adjust: 20px;
+}
+
+*{
+    box-sizing : border-box;
+}
+
+.column{
+    float: left;
+    width: 3%;
+    padding: 20px;
+
+}
+
+/*clear floats*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.topnav{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #04aa04;
+    color:white;
+}
+
+video{
+    text-align:center;
+    margin-left:10%;
+    
+}
